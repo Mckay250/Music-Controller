@@ -8,9 +8,10 @@ def main(request):
     return HttpResponse("Welcome to Rooms app", request)
 
 
-class RoomView(generics.ListAPIView, generics.CreateAPIView):
+class AddRoom(generics.CreateAPIView):
     queryset = Room.objects.all()
     serializer_class = RoomSerializer
 
-
-
+class GetRooms(generics.ListAPIView):
+    queryset = Room.objects.all()
+    serializer_class = RoomSerializer
