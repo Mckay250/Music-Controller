@@ -45,3 +45,11 @@ testem.log
 .DS_Store
 Thumbs.db
 /nbproject/private/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+db.sqlite3
